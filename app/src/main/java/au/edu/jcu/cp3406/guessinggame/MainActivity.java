@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toast toast = Toast.makeText(this, "you won!", Toast.LENGTH_LONG);
 
-        if (!game.guessedCorrect) {
+        if (!game.check(guess)) {
             toast.setText("incorrect... try again!");
         }
 
